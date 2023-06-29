@@ -1,5 +1,5 @@
 *{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Tajawal', sans-serif;
 }
  body{
     background-image: url("loginback.jpg");
@@ -82,6 +82,7 @@ i{
     font-size: small;
     color: azure;
     margin-top: 10px;
+    
 }
 .left{
     display: flex;

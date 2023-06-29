@@ -80,6 +80,7 @@ li a.active, li a:hover{
 
 
 .checkbtn{
+  position: relative;
   font-size: 30px;
   color: white;
   float: right;
@@ -121,7 +122,8 @@ li a.active, li a:hover{
       line-height: 30px;
   }
   nav ul li a{
-      font-size: 20px;
+     display: block;
+     font-size: 20px;
   }
   li a:hover, li a.active{
       background:none;
@@ -129,6 +131,8 @@ li a.active, li a:hover{
   }
   #check:checked ~ ul{
       left:0;
+      background: black;
+      
   }
 }
 
@@ -144,6 +148,7 @@ li a.active, li a:hover{
   text-align: center;
 }
 .wrap{
+
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -152,7 +157,6 @@ li a.active, li a:hover{
   background: url(back-hero.jpg);
   background-size: cover;
   background-position: center;
-  opacity: 0.8;
 }
 .wrap-texto{
   color: #fff;
@@ -422,8 +426,10 @@ footer{
     font-size: 2.5rem;
   }
   .wrap-texto {
-    font-weight: 700 ;
-    font-size: 30px;
+    font-weight: 600 ;
+    font-size: 25px;
+    justify-content: all;
+  
  }
   
   .footer-menu-container{
@@ -453,8 +459,10 @@ footer{
 /* media 768-882 */
 
 @media (max-width: 768px){
-  h1{
-    font-size: 1.7em;
+  .wrap-texto{
+    font-weight: 600 ;
+    font-size: 20px;
+    justify-content: all;
   }
   .container{
     flex-wrap: wrap;
@@ -482,10 +490,28 @@ footer{
 
 @media (max-width: 576px){
   .wrap-texto{
-    font-size: 25px;
+    font-weight: 700 ;
+    font-size: 15px;
+    justify-content: all;
   } 
-  h1{
-    font-size: 2.5rem;
+  
+  
+}
+/* celular (iphone 12 pro ) */
+
+@media (max-width: 390px) {
+  .wrap-texto{
+    font-weight: 900 ;
+    font-size: 15px;
+    justify-content: all;
+  } 
+  .card{
+    width: 300px;
+    justify-content: center;
   }
+
+
+  
+
   
 }
